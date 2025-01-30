@@ -1,6 +1,6 @@
-## ![AWS Infrastructure Architecture](/aws.svg) aws-high-scalability-infrastructure
+## ![AWS Infrastructure Architecture](/aws.svg) 
 
-
-
+<img src="aws.svg" width="200" height="100">
+<h1>aws-high-scalability-infrastructure</h1> 
 
 A high-performance AWS cloud infrastructure that dynamically scales web server (EC2 Infrastructure) using Auto Scaling Groups, providing adaptive resource management through advanced monitoring. The system automatically provisions and terminates servers based on real-time CPU utilization, ensuring optimal performance and cost-efficiency in a responsive, self-optimizing cloud environment.
