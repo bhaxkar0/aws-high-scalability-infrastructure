@@ -2,11 +2,10 @@
 
 A high-performance AWS cloud infrastructure that dynamically scales web server (EC2 Infrastructure) using Auto Scaling Groups, providing adaptive resource management through advanced monitoring. The system automatically provisions and terminates servers based on real-time CPU utilization, ensuring optimal performance and cost-efficiency in a responsive, self-optimizing cloud environment.
 
-### Deploy Web Page to Ubuntu EC2 Instance
+1. **Deploy Web Page to Ubuntu EC2 Instance**:
 
-To deploy a web page to an Ubuntu EC2 instance, follow these steps:
+    To deploy a web page to an Ubuntu EC2 instance we have to Launch an EC2 Instance, follow these steps:
 
-1. **Launch an EC2 Instance**:
     - Go to the AWS Management Console.
     - Navigate to the EC2 Dashboard.
     - Click on "Launch Instance".
@@ -20,6 +19,9 @@ To deploy a web page to an Ubuntu EC2 instance, follow these steps:
     - Copy and paste each command from the `setup_apache.sh` script into the terminal and execute them one by one
    
 2. **Create an image form ubuntu server**:
+
+    Creating an image from an Ubuntu server allows you to save the current state of your server, including its configuration, installed software, and data. This image can then be used to launch new instances with the same setup.
+
     - In the EC2 Dashboard, click on Instances in the left-hand menu.
     - Locate the Ubuntu server instance you want to create an image from and select it by clicking the checkbox next to it.
     - With the instance selected, click on the Actions button at the top of the page.
