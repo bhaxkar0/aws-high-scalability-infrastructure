@@ -30,6 +30,32 @@ A high-performance AWS cloud infrastructure that dynamically scales web server (
     - Optionally, add a description for the image.
     - Click the Create image button.
 
+3. **Create Launch Template**:
+
+   A Launch Template in AWS EC2 is a reusable configuration template that ensures consistent instance deployment. Launch templates are used with Auto Scaling Groups to dynamically scale instances based on demand.
+
+   - EC2 > Launch Templates > Create Template
+   - Enter the Launch template name and Template version description
+   - Select your AMI
+   - Select Instance Type (t2.micro)
+   - Select Key Pair same as before
+   - Security Group
+   - Click on create launch template
+
+4. **Create Auto Scaling Group**:
+
+   - EC2 > Auto Scaling Groups > Create Auto Scaling Group
+   - Enter Auto Scaling group name
+   - Select the Launch template
+   - Select VPC
+   - Select Availability Zones and subnets
+   - Availability Zone distribution (Balanced best effort)
+   - Configure Group Size: Desired capacity type = 2, Min desired capacity = 1, and Max desired  capacity = 4
+   - Enable group metrics collection within CloudWatch
+   - Enable default instance warmup (300 second)
+   - Add notification and select SNS topic and after that select event type
+   - Click on create Auto Scaling Group
+   
 
 
 
